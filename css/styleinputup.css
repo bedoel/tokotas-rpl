@@ -1,0 +1,346 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* CSS yang dibuat sendiri */
+
+@font-face {
+    font-family: 'fira code';
+    src: url(../fonts/firacode/FiraCode-Regular.ttf);
+}
+
+body {
+    height: 100vh;
+    background-image: url('../img/bg-login2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: rgba(14,14,14,255); */
+    color: rgba(201,209,217,255);
+    font-family: 'fira code';
+}
+.pracontainer{
+    height: 100vh;
+}
+.container {
+    position: absolute;
+    left: 70%;
+    transform: translate(-50%, 4%);
+    width: 350px;
+
+    background-color: rgba(0,0,0,0.7);
+}
+.container-edit{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 755px;
+
+    background-color: #161b22;
+    box-shadow: 0 0 10px black;
+    border: 1px solid #2e343b;
+}
+.container .header {
+    /* background-color: black; */
+    padding: 20px 25px;
+    border-bottom: 1px solid rgba(233,233,233,255);
+}
+.header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(233,233,233,255);
+}
+.salah {
+    margin: 20px 0 0 20px;
+}
+.salah p {
+    color: red;
+}
+
+.main {
+    margin: 20px 0px 20px 0px;
+}
+.main .content label {
+    text-align: left;
+    font-size: 11px;
+    color: rgba(233,233,233,255);
+}
+.content .input {
+    margin: 0px 25px;
+}
+.main .content .textfield {
+    width: calc(100%);
+    padding: 3px;
+    margin: 5px 0px 10px 0px;
+    box-sizing: border-box;
+    border: none;
+    background-color: rgba(233,233,233,255);
+    font-size: 10px;
+    color: rgba(14,14,14,255);
+    outline: 0;
+    font-family: 'fira code';
+}
+.main .content .txt-edit {
+    width: 420px;
+    padding: 8px 10px;
+    margin: 5px 0px 15px 0px;
+    box-sizing: border-box;
+    border: 1px solid #2e343b;
+    border-radius: 5px;
+    background-color: rgba(1,4,9,255);
+    font-size: 15px;
+    color: #2d7de3;
+    outline: 0;
+    font-family: 'fira code';
+}
+
+::-webkit-calendar-picker-indicator{
+    color: #2d7de3;
+    background-color: #2d7de3;
+    border-radius: 5px;
+}
+.main .content .iframe {
+    width: 100%;
+    height: 185px;
+    position: relative;
+}
+.main .content .iframe iframe {
+    border-radius: 5px;
+    position: absolute;
+    top: 25px;
+    right: 5px;
+}
+.kurung {
+    color: rgba(233,233,233,255);
+    margin-left: 8px;
+}
+
+.main .rememberme {
+    padding-bottom: 10px;
+    font-size: 12px;
+    transform: scale(0.8, 0.8);
+    padding-left: 20px;
+    float: left;
+    color: rgba(233,233,233,255);
+}
+.main .button {
+    margin: 0 25px;
+}
+.main .button button {
+    width: 100%;
+    font-weight: bold;
+    background-color: #238636;
+    border: none;
+    font-size: 15px;
+    padding: 7px;
+    color: rgba(201,209,217,255);
+    font-family: 'fira code';
+    cursor: pointer;
+}
+.main .button button:hover{
+    background-color: #2ea043;
+}
+
+.main .button-edit {
+    margin: 20px 25px;
+}
+.main .button-edit button {
+    width: 100%;
+    font-weight: bold;
+    background-color: #238636;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    color: rgba(201,209,217,255);
+    font-family: 'fira code';
+    cursor: pointer;
+    margin: 30px 0px 0px 0px;
+}
+.main .button-edit button:hover{
+    background-color: #2ea043;
+}
+
+.main .register {
+    margin: 20px 25px 0px 20px;
+}
+.main .register p {
+    color: rgba(233,233,233,255);
+    font-size: 12px;
+    text-align: center;
+}
+.main .register p a {
+    text-decoration: none;
+    color: #b35600;
+}
+.main .register p a:hover {
+    color: #d17b40;
+}
+
+.main .login {
+    margin: 20px 25px 0px 20px;
+}
+.main .login p {
+    color: rgba(201,209,217,255);
+    font-size: 13px;
+    text-align: center;
+}
+.main .login p a {
+    text-decoration: none;
+    color: #d19a66;
+}
+.main .login p a:hover {
+    color: #d17b40;
+}
+
+
+.footer{
+margin-bottom: 20px;
+background-color: rgba(14,14,14,0.7);
+height: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.footer .credit{
+    border-top: 2px solid rgba(223,223,223,255);
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: var(--white);
+    text-align: center;
+}
+
+/* FOOTER COPYRIGHT */
+.copyright{
+    display: block;
+    padding: 15px;
+    border-top: 2px solid rgba(14,14,14,255)
+}
+.copy{
+    text-align: center;
+    font-size: 1rem;
+    color: rgba(223,223,223,255);
+    text-shadow: 2px 1px 4px black;
+    font-size: 12px;
+}
+
+/* Responsive Break Point */
+@media screen and (max-width: 768px){
+    .container {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    
+        background-color: rgba(0,0,0,.7);
+        box-shadow: 0 0 10px black;
+        border-radius: 5px 5px 5px 5px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .container {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    
+        background-color: rgba(0,0,0,.7);
+        box-shadow: 0 0 10px black;
+        border-radius: 0;
+    }
+    .container .header {
+        border-radius: 0;
+    }
+}
+
+
+
+
+
+/* Clear Fix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    zoom: 1;
+}
+
+
+/* SCROLLBAR */
+/* membuat container atau wadah dari scrollbar dengan lebar 20px  */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+/* membuat background dari scrollbar */
+/* kasih warna transparan agar lebih estetik  */
+::-webkit-scrollbar-track {
+background-color: transparent;
+}
+
+
+/* membuat styling pada batang atau bar scrollbar  */
+/* kita beri warna abu tua dengan lengkungan di sisi atas dan bawahnya  */
+::-webkit-scrollbar-thumb {
+background-color: #d6dee1;
+border-radius: 20px;
+background-clip: content-box;
+}
+
+/* warna akan berubah menjadi abu mudah saat kursor diarahkan  */
+::-webkit-scrollbar-thumb:hover {
+background-color: #a8bbbf;
+}

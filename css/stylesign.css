@@ -1,0 +1,175 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'fira code';
+    src: url(fonts/firacode/FiraCode-Regular.ttf);
+}
+
+body {
+    height: 100vh;
+    background-image: url('../img/code-gb5d772535_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgba(201,209,217,255);
+    font-family: 'fira code';
+}
+
+/* CSS LOGIN */
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 430px;
+
+    background-color: rgba(0,0,0,.7);
+    box-shadow: 0 0 10px black;
+    border-radius: 5px 5px 5px 5px;
+}
+.container .header {
+    background-color: rgba(13, 17, 23, 0.7);
+    padding: 20px 25px;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 1px solid #2e343b;
+}
+.header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+}
+.salah {
+    margin: 20px 0 0 20px;
+}
+.salah p {
+    color: red;
+}
+
+.main {
+    margin: 50px 0px 50px 0px;
+}
+.main .content label {
+    text-align: left;
+    font-size: 18px;
+}
+.content .input {
+    margin: 0px 25px;
+}
+.main .content .textfield {
+    width: calc(100%);
+    padding: 8px 10px;
+    margin: 5px 0px 15px 0px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #2d7de3;
+    background-color: transparent;
+    font-size: 15px;
+    color: #2d7de3;
+    outline: 0;
+    font-family: 'fira code';
+}
+
+.main .rememberme {
+    padding-bottom: 10px;
+    font-size: 10px;
+    transform: scale(0.8, 0.8);
+    padding-left: 20px;
+    float: left;
+}
+.main .button {
+    margin: 0 25px;
+}
+.main .button button {
+    width: 100%;
+    font-weight: bold;
+    background-color: #238636;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    color: rgba(201,209,217,255);
+    font-family: 'fira code';
+    cursor: pointer;
+}
+.main .button button:hover{
+    background-color: #2ea043;
+}
+.main .register {
+    margin: 20px 25px 0px 20px;
+}
+.main .register p {
+    color: rgba(201,209,217,255);
+    font-size: 13px;
+    text-align: center;
+}
+.main .register p a {
+    text-decoration: none;
+    color: #d19a66;
+}
+.main .register p a:hover {
+    color: #d17b40;
+}
+
+.footer {
+	color: rgba(201,209,217,255);
+	text-align: center;
+	margin: 30px 0px 0px 0px;
+	padding: 15px;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+.footer .copy {
+    color: white;
+    text-shadow: 2px 1px 4px black;
+    text-align: center;
+    font-size: 10px;
+}
